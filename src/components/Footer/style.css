@@ -1,14 +1,31 @@
 .footer {
-  min-height: 100px;
-  background: #e5e5e5;
-  position: relative;
+  border-top: 8px solid #4aaaa5;
+  background-color: #666;
+  color: #fff;
+  width: 100%;
+  min-height: 70px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
 }
 
-.footer span {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 3px;
-  background: #b8b8b8;
+/* .footer div.container {
+  display: flex;
+  align-items: center;
+} */
+
+.footer p {
+  margin: 0;
+}
+
+.footer a:link,
+.footer a:visited {
+  color: #fff;
+}
+
+.footer a:hover {
+  color: #ddd;
+  text-decoration: none;
 }

@@ -1,19 +1,25 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from './pages/Home';
-import Navbar from './components/Navbar'
+import ContentWrapper from './components/ContentWrapper';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 import './App.css';
 
 function App() {
   return (
-
     <div className="App">
       <Router>
         <Navbar />
-        <Switch>
-          <Route path='/' component={Home} />
-        </Switch>
+        <ContentWrapper
+          backgroundimage={'./assets/images/content-background.png'}
+        >
+          <Switch>
+            <Route path="/" component={Home} />
+          </Switch>
+        </ContentWrapper>
+        <Footer />
       </Router>
     </div>
   );
