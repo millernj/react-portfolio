@@ -3,6 +3,21 @@ import { Link } from 'react-router-dom';
 import Container from '../Container';
 import './style.css';
 
+function NavLink({ children, pathname }) {
+  return (
+    <Link
+      to={pathname}
+      className={
+        window.location.pathname === pathname
+          ? 'nav-link active'
+          : 'nav-link'
+      }
+    >
+      {children}
+    </Link>
+  )
+}
+
 // Depending on the current path, this component sets the "active" class on the appropriate navigation link item
 function Navbar() {
   return (
@@ -15,40 +30,19 @@ function Navbar() {
           <div>
             <ul className="navbar-nav">
               <li className="nav-item">
-                <Link
-                  to="/"
-                  className={
-                    window.location.pathname === '/'
-                      ? 'nav-link active'
-                      : 'nav-link'
-                  }
-                >
+                <NavLink pathname="/">
                   Home
-                </Link>
+                </NavLink>
               </li>
               <li className="nav-item">
-                <Link
-                  to="/contact"
-                  className={
-                    window.location.pathname === '/contact'
-                      ? 'nav-link active'
-                      : 'nav-link'
-                  }
-                >
+                <NavLink pathname="/contact">
                   Contact Me
-                </Link>
+                </NavLink>
               </li>
               <li className="nav-item">
-                <Link
-                  to="/portfolio"
-                  className={
-                    window.location.pathname === '/portfolio'
-                      ? 'nav-link active'
-                      : 'nav-link'
-                  }
-                >
+                <NavLink pathname="/portfolio">
                   Portfolio
-                </Link>
+                </NavLink>
               </li>
             </ul>
           </div>
