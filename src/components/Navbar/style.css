@@ -2,6 +2,11 @@ nav.navbar {
   margin-bottom: 0;
 }
 
+.nav-colors {
+  color: var(--text);
+  background: var(--bg-nav);
+}
+
 /* .page-name-heading {
   min-width: 156px;
   background-color: #4aaaa5;

@@ -1,5 +1,5 @@
 .heading {
-  background-color: white;
+  background-color: var(--bg-nav);
   width: 100%;
 }
 h2 {

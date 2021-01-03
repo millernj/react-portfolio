@@ -3,6 +3,7 @@
   background-size: cover;
   background-position: center;
   position: relative;
+  background: var(--bg-hero);
 }
 
 .hero::after {
@@ -14,7 +15,6 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background: black;
 }
 
 .hero * {
@@ -24,7 +24,7 @@
 
 .hero h1,
 .hero h2 {
-  color: white;
+  color: var(--text);
 }
 
 .hero h1 {
