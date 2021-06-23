@@ -72,8 +72,8 @@
   flex-direction: column;
   height: 100vh;
   color: var(--text);
-  background: var(--bg);
-  transition: background 500ms ease-in-out, color 1000ms ease-in-out;
+  /* background: var(--bg);
+  transition: background 500ms ease-in-out, color 1000ms ease-in-out; */
 }
 
 a:link,
